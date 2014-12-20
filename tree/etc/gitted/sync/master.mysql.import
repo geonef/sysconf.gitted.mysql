@@ -1,6 +1,8 @@
 #!/bin/bash
 
-source /etc/gitted/sync/defs
+export GITTED_MYSQL_DATA_PATH=mysql
+export GITTED_MYSQL_DATABASE=demo
 
-GITTED_DATA_PATH=sysconf /usr/share/gitted/import/sysconf
-GITTED_DATA_PATH=mysql /usr/share/gitted/import/mysql
+[ -r /etc/gitted/sync/defs ] && . /etc/gitted/sync/defs
+
+GITTED_DATA_PATH=GITTED_MYSQL_DATA_PATH /usr/share/gitted/import/mysql
