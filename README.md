@@ -12,6 +12,7 @@ Once applied, a MySQL should be running on the system.
 # netstat -tlpn
 Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      -               
 ```
 
 
